@@ -1,0 +1,418 @@
+/*****/
+/** Page Base Styles **/
+/*****/
+
+html {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-size: 16px;
+    background-color: #f2f2e8;
+    color: #383e51;
+}
+
+.mobile{
+    display: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+section.container, section .container{
+    padding: 2rem 1.5rem;
+}
+
+.col{
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 900px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section.container, section .container{
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    section{
+        border-top: 1px solid #caced7;
+    }
+    .btn, img, .course{
+        border-radius: 0.5rem;
+    }
+}
+
+/*****/
+/** Text Styles **/
+/*****/
+
+h2{
+    font-family: "Playfair Display",serif;
+    font-weight: 900;
+    font-size: 2.75rem;
+    line-height: 1.2;
+}
+
+h3{
+    font-family: "Playfair Display",serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+p{
+    font-family: "Fauna One", sans-serif;
+    font-size: 0.85rem;
+    line-height: 2;
+    letter-spacing: 20;
+}
+
+.display-font, {
+    font-family: "Roboto", serif;
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #f2f2e8;
+}
+
+a{
+    font-family: "Roboto", serif;
+    text-decoration: none;
+    color: #f2f2e8;
+}
+
+#logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #383e51;
+}
+
+h1 span{
+    font-weight: bold;
+}
+
+/*****/
+/** Header **/
+/*****/
+
+header{
+    justify-content: space-between;
+    height: 4rem;
+    background-color: #e8bf3b;
+}
+
+nav li{
+    display: inline;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 900px){
+    nav, nav ul{
+        width: 100%;
+    }
+}
+
+/*****/
+/** Banner **/
+/*****/
+
+#banner{
+    background-color: #caced7;
+}
+
+#banner img{
+    width: 60%;
+    height: auto;
+}
+
+#banner h3{
+    margin: 1.5rem 0;
+}
+
+#banner .btn{
+    background-color: #383e51;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#banner .btn a{
+    color: #e8bf3b;
+}
+
+@media only screen and (max-width: 900px){
+    #banner{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #banner img{
+        width: 100%;
+    }
+    #banner .col{
+        margin: 2rem auto;
+        padding: 0.5rem;
+        justify-content: center;
+    }
+    #banner h3{
+        margin: 2rem 0 1rem 0;
+    }
+}
+
+
+/*****/
+/** Information **/
+/*****/
+
+#info-cols{
+    display: flex;
+}
+
+#main-information{
+    width: 59%;
+    padding: 2rem 1.5rem;
+    flex-shrink: 0;
+}
+
+#main-information img{
+    width: 100%;
+}
+#main-information h2{
+    margin: 2rem 0 1.5rem 0;
+}
+
+#quote{
+    margin-top: 2.5rem;
+    color: #383e51;
+}
+
+#information{
+    padding: 1rem 0;
+    border-left: 1px solid #caced7;
+}
+
+.unit{
+    display: flex;
+    padding: 1rem;
+}
+
+.unit img{
+    width: 35%;
+    height: 35%;
+}
+
+.unit div{
+    padding: 0.5rem;
+    width: 65%;
+}
+
+.unit .info{
+    padding: 0.5rem 0;
+}
+
+#information .unit:last-child{
+    background-color: #caced7;
+}
+
+.more{
+    color: #e8bf3b;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#information .unit:last-child .more{
+    color: #383e51;
+}
+
+@media only screen and (max-width: 900px){
+    #information{
+        margin: 0 auto;
+        border: none;
+    }
+    .unit{
+        display: block;
+    }
+    .unit img, .unit div{
+        width: 100%;
+    }
+    #information .unit:last-child{
+        background-color: transparent;
+    }
+}
+
+/*****/
+/** Courses **/
+/*****/
+
+#course-list{
+    padding: 2rem 4.5rem;
+    background-color: #caced7;
+}
+
+#course-list h2{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#courses-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background-color: #e8bf3b;
+}
+
+.course img{
+    width: 100%;
+    height: auto;
+}
+
+.course div{
+    padding: 1rem;
+}
+
+.label{
+    margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 900px){
+    #course-list{
+        display: block;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    #course-list h2{
+        margin: 2rem 0 1rem 0;
+    }
+
+    #courses-desktop{
+        display: none;
+    }
+
+     #courses-mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        align-items: center;
+    }
+
+    .course{
+        width: 90%;
+        padding: 1rem;
+        margin: 0.5rem;
+        background-color: #e8bf3b;
+    }
+}
+
+/*****/
+/** Thesis **/
+/*****/
+
+#thesis-cols{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#thesis-cols h2{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#thesis-main{
+    width: 55%;
+    padding: 0 2.5%;
+}
+
+#thesis-main h3{
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+#thesis-main p{
+    margin-bottom: 2rem;
+}
+
+#thesis{
+    width: 39%;
+    display: flex;
+    padding: 0;
+    margin-right: 0.25rem;
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+#thesis div{
+    padding: 0 2rem 0 0;
+
+}
+
+#thesis div:first-child{
+    background-color: #caced7;
+}
+
+#thesis img{
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 900px){
+    #thesis-main h3, #thesis-main p{
+        display: none;
+    }
+    #thesis{
+        display: none;
+    }
+    #thesis-main, video{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/*****/
+/** Footer **/
+/*****/
+
+footer{
+    border-top: 1px solid #caced7;
+    background-color: #e8bf3b;
+}
+
+footer.container{
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#links span{
+    padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 900px){
+    footer{
+        border: none;
+    }
+    #links {
+        display: none;
+    }
+}
